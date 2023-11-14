@@ -9,7 +9,7 @@ data = pd.read_csv('organizations-500000.csv')
 dataframe = pd.DataFrame(data)
 dataframe.to_json('organizations-500000.json')
 dataframe.to_pickle('organizations-500000.pkl')
-file = open('organizations-500000', 'wb')
+file = open('organizations-500000.msgpack', 'wb')
 file.write(msgpack.packb(dataframe.to_dict()))
 file.close()
 

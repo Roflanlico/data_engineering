@@ -1,0 +1,44 @@
+[
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-sochi-loo-2",
+    "Name": "Автобусный тур в Сочи (Лоо) из г.Ульяновск",
+    "Price": 16620.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-anapu-vityazevo-3",
+    "Name": "Автобусный тур в Анапу (Витязево, Сукко) из г.Ульяновск",
+    "Price": 17820.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-gelendzhik",
+    "Name": "Автобусный тур в Геленджик из г.Ульяновск",
+    "Price": 21420.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-abhaziyu-alahadzy-picunda-gudauta",
+    "Name": "Автобусный тур в Абхазию (Холодная речка, Алахадзы, Гагра) из г.Ульяновск",
+    "Price": 20840.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-sochi-yakornuyu-schel",
+    "Name": "Автобусный тур в Сочи (Якорная щель) из г.Ульяновск",
+    "Price": 16620.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-adler-2",
+    "Name": "Автобусный тур в Сочи (Адлер) из г.Ульяновск  (К)",
+    "Price": 16620.0,
+    "Time amount": "9"
+  },
+  {
+    "Href": "/tours/avtobusnye-tury-na-chernoe-more/avtobusnyy-tur-v-sochi-lazarevskoe",
+    "Name": "Автобусный тур в Сочи (Лазаревское)  из г.Ульяновск",
+    "Price": 16620.0,
+    "Time amount": "9"
+  }
+]

@@ -19,10 +19,6 @@ def loadTextData(fileName):
             obj = {}
     return data
 
-#with open("task_3_item.msgpack", "rb") as data_file:
-#    byte_data = data_file.read()
-#data = msgpack.unpackb(byte_data)
-
 data = loadTextData('task_3_item.text')
 
 collection = getColl("mongodb://localhost:27017")

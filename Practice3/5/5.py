@@ -31,10 +31,15 @@ def parse_page(data, url, headers):
       soup = BeautifulSoup(html_content, "html.parser")
   
       items = soup.find_all("article", class_=['c-anime'])
-            
+      #print(items)
+
       for item in items:
-        if len(item.find_all("a", class_=['cover'])) > 0:
-            href = item.find_all("a", class_=['cover'])[0].get('href')
+        #print(item)
+        href = ''
+        if len(item.find_all(["a"], class_=['cover'])) > 0:
+            href = item.find_all(["a"], class_=['cover'])[0].get('href')
+        else:
+            href = item.find_all(["div"], class_=['cover'])[0].get('data-href')
 
         name = item.find_all("span", class_=['name-ru'])[0].get_text()
 
@@ -97,21 +102,24 @@ for anime in data2:
     for e in curr:
         freq[e] = freq.get(e, 0) + 1
 
-with open("result_5.json", "w") as file:
+with open("result_5.json", "w", encoding='utf-8') as file:
     file.write(json.dumps(data, indent=2, ensure_ascii=False))
+
+with open("result_5_2.json", "w", encoding='utf-8') as file:
+    file.write(json.dumps(data2, indent=2, ensure_ascii=False))
     
 sorted_data = sorted(data, key=lambda x: x["Type"])
 filtered_data = list(filter(lambda x: x["Production year"] >= 2000, data))
 
-with open("result_sorted_5.json", "w") as file:
+with open("result_sorted_5.json", "w", encoding='utf-8') as file:
     file.write(json.dumps(sorted_data, indent=2, ensure_ascii=False))
 
-with open("result_filtered_5.json", "w") as file:
+with open("result_filtered_5.json", "w", encoding='utf-8') as file:
     file.write(json.dumps(filtered_data, indent=2, ensure_ascii=False))
 
 
 
-with open("stats_5.json", "w") as file:
+with open("stats_5.json", "w", encoding='utf-8') as file:
     file.write(json.dumps(
             {
                 "Sum": score_sum,
